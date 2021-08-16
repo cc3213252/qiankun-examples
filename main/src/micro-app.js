@@ -8,7 +8,7 @@ const microApps = [
   },
   {
     name: 'sub-react',
-    entry: 'http://localhost:7788/subapp/sub-react/',
+    entry: process.env.VUE_APP_SUB_REACT,
     activeRule: '/sub-react'
   },
   {

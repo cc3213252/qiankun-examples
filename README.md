@@ -1,5 +1,7 @@
 # 微前端实战
 
+* [参考资料](https://juejin.cn/post/6875462470593904653)
+  
 ## 构建项目
 
 (最好使用npm构建，否则package.json中要增加start启动命令)  
@@ -46,3 +48,9 @@ npm install --save common vue-router vuex
 拷贝sub-html，npm install  
 准备package.json  
 聚合库安装： npm i npm-run-all -D  
+
+## 解决问题
+
+用到公共库的必须用npm方式安装，不能直接拷过去： npm install file:../common  
+react在qiankun下必须用react-app-rewired来启动  
+调试时先尝试单独子应用正常，如基座下不正常，则修改micro-app.js排除加载变量的问题  
